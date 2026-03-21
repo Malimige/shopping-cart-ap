@@ -9,8 +9,8 @@ pipeline {
 
         stage('Clone') {
             steps {
-                git 'https://github.com/roshinif/shopping-cart-app.git'
-            }
+                git branch: 'main',
+                        url: 'https://github.com/roshinif/shopping-cart-app.git'            }
         }
 
         stage('Build') {
